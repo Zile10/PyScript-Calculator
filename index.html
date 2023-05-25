@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Py-script links -->
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <!-- Py-script links end -->
+
+    <link rel="stylesheet" href="./sass/style.css">    
+    <title>PyScript</title>
+</head>
+<body>
+    <div id="calculator">
+        <input type="text" id="display">
+        <div class="btns">
+            <button class="btn span-2" py-click="clearDisplay()">AC</button>
+            <button class="btn" py-click="delChar()">DEL</button>
+            <button class="btn" py-click="updateDisplay('+')">+</button>
+            <button class="btn" py-click="updateDisplay('7')">7</button>
+            <button class="btn" py-click="updateDisplay('8')">8</button>
+            <button class="btn" py-click="updateDisplay('9')">9</button>
+            <button class="btn" py-click="updateDisplay('-')">-</button>
+            <button class="btn" py-click="updateDisplay('4')">4</button>
+            <button class="btn" py-click="updateDisplay('5')">5</button>
+            <button class="btn" py-click="updateDisplay('6')">6</button>
+            <button class="btn" py-click="updateDisplay('*')">*</button>
+            <button class="btn" py-click="updateDisplay('1')">1</button>
+            <button class="btn" py-click="updateDisplay('2')">2</button>
+            <button class="btn" py-click="updateDisplay('3')">3</button>
+            <button class="btn" py-click="updateDisplay('/')">/</button>
+            <button class="btn" py-click="updateDisplay('0')">0</button>
+            <button class="btn" py-click="updateDisplay('.')">.</button>
+            <button class="btn span-2" py-click="calculate()">=</button>
+        </div>
+    </div>
+    
+    <py-script>js.console.clear()</py-script>
+    <py-script src="./app.py"></py-script>
+</body>
+</html>

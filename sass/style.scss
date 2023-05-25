@@ -1,0 +1,32 @@
+$inputsHeight: 40px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+}
+#calculator {
+    margin: auto;
+    width: 300px;
+    input {
+        width: 100%;
+        height: $inputsHeight;
+        padding: 5px;
+    }
+    .btns {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        .btn {
+            height: $inputsHeight;
+            background-color: darkcyan;
+        }
+        .span-2 {
+            grid-column: span 2;
+            background-color: crimson;
+        }
+    }
+}
